@@ -141,11 +141,24 @@ body {
   padding-left: 5rem;
   background: #f5f5f5;
 }
+@media (max-width: 515px) {
+  .container {
+    padding: 25px 0;
+  }
+}
 nav {
   width: 95%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+@media (max-width: 515px) {
+  nav {
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 nav a {
   padding-right: 2rem;
@@ -164,16 +177,36 @@ header {
   padding-bottom: 2rem;
 }
 header img {
-  margin: 2rem;
+  margin: 1rem;
   width: 15%;
   height: 15%;
+}
+@media (max-width: 515px) {
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }
 header h1 {
   font-size: 3rem;
   margin-left: 2rem;
 }
+@media (max-width: 515px) {
+  header h1 {
+    padding-right: 50px;
+    text-align: center;
+    font-size: 24px;
+  }
+}
 header h2 {
   margin: 1rem 2rem;
+}
+@media (max-width: 515px) {
+  header h2 {
+    text-align: center;
+  }
 }
 header p {
   width: 100%;
@@ -192,6 +225,12 @@ header button {
   color: white;
   background-color: gray;
 }
+@media (max-width: 515px) {
+  header button {
+    margin-top: 15px;
+    margin-left: 110px;
+  }
+}
 .top-content {
   display: flex;
   flex-flow: row wrap;
@@ -199,19 +238,39 @@ header button {
 .top-content .bio {
   width: 40%;
 }
+@media (max-width: 515px) {
+  .top-content .bio {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
 .top-content .bio h2 {
   font-size: 2rem;
 }
 .top-content .bio p {
   margin-top: 1rem;
 }
+@media (max-width: 515px) {
+  .top-content .bio p {
+    text-align: center;
+  }
+}
 .top-content .list {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 100%;
   margin-left: 5rem;
+}
+@media (max-width: 515px) {
+  .top-content .list {
+    width: 55%;
+  }
 }
 .top-content .list h2 {
   font-size: 2rem;
@@ -223,6 +282,12 @@ header button {
   margin-top: 1rem;
   line-height: 2rem;
 }
+@media (max-width: 515px) {
+  .top-content .list p {
+    text-align: center;
+    width: 100%;
+  }
+}
 .education,
 .work-history {
   margin: 25px 0;
@@ -231,6 +296,13 @@ header button {
 .work-history h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 515px) {
+  .education h2,
+  .work-history h2 {
+    margin-right: 20px;
+    text-align: center;
+  }
 }
 .education table,
 .work-history table {
@@ -252,4 +324,9 @@ header button {
 .education table tr:nth-child(even),
 .work-history table tr:nth-child(even) {
   background-color: #dddddd;
+}
+@media (max-width: 515px) {
+  .work-history .mobile-gone {
+    display: none;
+  }
 }

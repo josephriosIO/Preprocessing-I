@@ -129,7 +129,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  font-family: serif;
+  font-family: arial, sans-serif;
 }
 html,
 body {
@@ -137,7 +137,9 @@ body {
 }
 .container {
   width: 100%;
-  margin: 2rem 4rem;
+  padding: 2rem 0;
+  padding-left: 5rem;
+  background: #f5f5f5;
 }
 nav {
   width: 95%;
@@ -156,9 +158,10 @@ nav a:hover {
 header {
   background: #edf7fd;
   margin: 1rem 0;
-  width: 93%;
+  width: 95%;
   display: flex;
   flex-flow: column wrap;
+  padding-bottom: 2rem;
 }
 header img {
   margin: 2rem;
@@ -173,8 +176,10 @@ header h2 {
   margin: 1rem 2rem;
 }
 header p {
-  margin: 1rem 2rem;
+  width: 100%;
+  padding-left: 2rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   border-top: 1px solid black;
 }
 header button {
@@ -185,14 +190,14 @@ header button {
   width: 150px;
   font-size: 1rem;
   color: white;
-  background-color: darkgray;
+  background-color: gray;
 }
 .top-content {
   display: flex;
   flex-flow: row wrap;
 }
 .top-content .bio {
-  width: 45%;
+  width: 40%;
 }
 .top-content .bio h2 {
   font-size: 2rem;
@@ -201,18 +206,40 @@ header button {
   margin-top: 1rem;
 }
 .top-content .list {
-  width: 43.5%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
   margin-left: 5rem;
 }
 .top-content .list h2 {
   font-size: 2rem;
 }
 .top-content .list p {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  width: 40%;
+  border: 1px solid black;
   padding-left: 1rem;
   margin-top: 1rem;
-  margin-left: 2rem;
   line-height: 2rem;
+}
+.education h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.education table {
+  border-collapse: collapse;
+  width: 95%;
+}
+.education table th {
+  font-size: 1.5rem;
+}
+.education table td,
+.education table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.education table tr:nth-child(even) {
+  background-color: #dddddd;
 }

@@ -180,7 +180,39 @@ header p {
 header button {
   margin-left: 2rem;
   margin-bottom: 2rem;
-  border-radius: 15%;
+  border-radius: 10%;
   height: 40px;
   width: 150px;
+  font-size: 1rem;
+  color: white;
+  background-color: darkgray;
+}
+.top-content {
+  display: flex;
+  flex-flow: row wrap;
+}
+.top-content .bio {
+  width: 45%;
+}
+.top-content .bio h2 {
+  font-size: 2rem;
+}
+.top-content .bio p {
+  margin-top: 1rem;
+}
+.top-content .list {
+  width: 43.5%;
+  margin-left: 5rem;
+}
+.top-content .list h2 {
+  font-size: 2rem;
+}
+.top-content .list p {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  line-height: 2rem;
 }

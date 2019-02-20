@@ -137,6 +137,13 @@ table {
 
 @main-color: blue;
 
+.center() {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 html,
 body {
   height: 100%;
@@ -193,8 +200,46 @@ header {
   button {
     margin-left: 2rem;
     margin-bottom: 2rem;
-    border-radius: 15%;
+    border-radius: 10%;
     height: 40px;
     width: 150px;
+    font-size: 1rem;
+    color: white;
+    background-color: darkgray;
+  }
+}
+
+.top-content {
+  display: flex;
+  flex-flow: row wrap;
+
+  .bio {
+    width: 45%;
+
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  .list {
+    width: 43.5%;
+    margin-left: 5rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      padding-left: 1rem;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      line-height: 2rem;
+    }
   }
 }

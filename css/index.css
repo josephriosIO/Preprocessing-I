@@ -264,7 +264,7 @@ header button {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   margin-left: 5rem;
 }
 @media (max-width: 515px) {

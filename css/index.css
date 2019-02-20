@@ -336,3 +336,8 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+@media (max-width: 515px) {
+  footer p {
+    margin-right: 20px;
+  }
+}

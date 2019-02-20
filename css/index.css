@@ -223,23 +223,33 @@ header button {
   margin-top: 1rem;
   line-height: 2rem;
 }
-.education h2 {
+.education,
+.work-history {
+  margin: 25px 0;
+}
+.education h2,
+.work-history h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.education table {
+.education table,
+.work-history table {
   border-collapse: collapse;
   width: 95%;
 }
-.education table th {
+.education table th,
+.work-history table th {
   font-size: 1.5rem;
 }
 .education table td,
-.education table th {
+.work-history table td,
+.education table th,
+.work-history table th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-.education table tr:nth-child(even) {
+.education table tr:nth-child(even),
+.work-history table tr:nth-child(even) {
   background-color: #dddddd;
 }
